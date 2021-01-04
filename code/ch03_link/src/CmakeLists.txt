@@ -1,0 +1,35 @@
+#SET(SRC_LIST main.cpp)
+AUX_SOURCE_DIRECTORY(. SRC_LIST)
+
+FOREACH(F ${SRC_LIST})
+MESSAGE(${F})
+ENDFOREACH(F)
+
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
+
+
+
+#INCLUDE_DIRECTORIES(/tmp/t2/usr/include/hello)
+#FIND_PATH(myHeader hello.h)
+
+FIND_PATH(myHeader NAMES hello.h PATHS /usr/include /tmp/t2/usr/include/hello)
+IF(myHeader)
+INCLUDE_DIRECTORIES(${myHeader})
+ENDIF(myHeader)
+
+ADD_EXECUTABLE(main ${SRC_LIST})
+
+FIND_LIBRARY(myLib NAMES libhello.so PATHS /usr/lib /tmp/t2/usr/lib)
+IF(myLib)
+TARGET_LINK_LIBRARIES(main ${myLib})
+ENDIF(myLib )
+
+#ADD_DEPENDENCIES(target-name depend-target1)
+
+#TARGET_LINK_LIBRARIES(main /tmp/t2/usr/lib/libhello.so)
+
+INSTALL(TARGETS main RUNTIME DESTINATION bin)
+
+

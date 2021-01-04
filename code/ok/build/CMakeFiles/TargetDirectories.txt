@@ -1,0 +1,3 @@
+/mnt/hgfs/desktop/SensorFusion/ok/build/CMakeFiles/rebuild_cache.dir
+/mnt/hgfs/desktop/SensorFusion/ok/build/CMakeFiles/SensorFusion.dir
+/mnt/hgfs/desktop/SensorFusion/ok/build/CMakeFiles/edit_cache.dir

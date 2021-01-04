@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wall -O3 -DNDEBUG  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/hegaozhi/anaconda3/lib -Wl,-rpath-link,/home/hegaozhi/anaconda3/lib -L/home/hegaozhi/anaconda3/lib -rdynamic CMakeFiles/SensorFusion.dir/src/main.cpp.o  -o ../bin/SensorFusion 

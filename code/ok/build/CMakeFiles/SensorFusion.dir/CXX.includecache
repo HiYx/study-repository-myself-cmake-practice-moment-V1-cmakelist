@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/desktop/SensorFusion/ok/src/interface/ground_truth_package.h
+Eigen/Dense
+/mnt/hgfs/desktop/SensorFusion/ok/src/interface/Eigen/Dense
+
+/mnt/hgfs/desktop/SensorFusion/ok/src/interface/measurement_package.h
+Eigen/Dense
+/mnt/hgfs/desktop/SensorFusion/ok/src/interface/Eigen/Dense
+
+/mnt/hgfs/desktop/SensorFusion/ok/src/main.cpp
+string
+-
+vector
+-
+fstream
+-
+iostream
+-
+sstream
+-
+interface/ground_truth_package.h
+/mnt/hgfs/desktop/SensorFusion/ok/src/interface/ground_truth_package.h
+interface/measurement_package.h
+/mnt/hgfs/desktop/SensorFusion/ok/src/interface/measurement_package.h
+Eigen/Eigen
+/mnt/hgfs/desktop/SensorFusion/ok/src/Eigen/Eigen
+
